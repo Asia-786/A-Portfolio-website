@@ -189,7 +189,7 @@ border-bottom: 1px solid #fff;
 }
 .container p{
   margin: 2rem 0;
-  max-width: 540%;
+  max-width: 540px;
 }
 .container ul {
   font-size: 80%;
@@ -214,6 +214,24 @@ border-bottom: 1px solid #fff;
 .container .preview img{
   width: 100%;
   height: 100%;
+}
+.container .preview:hover{
+transform: scale3d(1.025, 1.025, 1.025);
+}
+.container .in-view{
+transform: translateY(0);
+opacity: 1;
+}
+.container .repo {
+-webkit-transition: 0.2s;
+transition: 0.2s;
+}
+
+.container .repo:hover,
+.container .repo:focus {
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
 }
 
  
